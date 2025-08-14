@@ -3,19 +3,6 @@
 ## Overview
 This project implements a comprehensive machine learning pipeline for predicting credit default risk using Lending Club data. The project is structured in four main phases, each focusing on different aspects of the machine learning workflow.
 
-## Project Structure
-```
-Credit Default Prediction/
-├── EDA-Preprocessing.ipynb                    # Phase 1: Exploratory Data Analysis & Preprocessing
-├── Handling-Imbalanced-Data.ipynb             # Phase 2: Data Balancing & Class Weight Calculation
-├── Model.ipynb                                # Phase 3: Model Training & Evaluation
-├── Model_Evaluation-Results_Interpretation.ipynb  # Phase 4: Model Evaluation & Results Interpretation
-├── processed_lending_club_data.parquet        # Clean, preprocessed dataset
-├── trained_models.joblib                      # Trained models (not in git due to size)
-├── README.md                                  # Project documentation
-└── requirements.txt                           # Python dependencies
-```
-
 ## Dataset
 - **Source**: Lending Club loan data (2007-2018)
 - **Size**: ~2.2M loan records
@@ -72,6 +59,19 @@ Credit Default Prediction/
 - **Underwriting Insights**: Feature importance analysis guides risk assessment criteria
 - **Model Deployment**: Ready for production use in real-time loan scoring
 
+## Project Structure
+```
+Credit Default Prediction/
+├── EDA-Preprocessing.ipynb                    # Phase 1: Exploratory Data Analysis & Preprocessing
+├── Handling-Imbalanced-Data.ipynb             # Phase 2: Data Balancing & Class Weight Calculation
+├── Model.ipynb                                # Phase 3: Model Training & Evaluation
+├── Model_Evaluation-Results_Interpretation.ipynb  # Phase 4: Model Evaluation & Results Interpretation
+├── processed_lending_club_data.parquet        # Clean, preprocessed dataset
+├── trained_models.joblib                      # Trained models (not in git due to size)
+├── README.md                                  # Project documentation
+└── requirements.txt                           # Python dependencies
+```
+
 ## Technologies Used
 - Python 3.x
 - Pandas, NumPy for data manipulation
@@ -87,7 +87,6 @@ Credit Default Prediction/
    - Start with `EDA-Preprocessing.ipynb`
    - Continue with `Handling-Imbalanced-Data.ipynb`
    - Finish with `Model.ipynb`
-
 
 ## Author
 Bhavya Patel
