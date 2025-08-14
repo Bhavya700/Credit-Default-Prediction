@@ -17,11 +17,16 @@ This project implements a comprehensive machine learning pipeline for predicting
 - **Feature Engineering**: Comprehensive feature creation and selection
 - **Performance Metrics**: AUC-ROC, Precision, Recall, F1-Score
 
-## Results
-- Comprehensive feature engineering pipeline
-- Balanced dataset preparation
-- Multiple model evaluation approaches
-- Production-ready preprocessing workflow
+### Key Findings
+1. **Excellent Performance**: All models achieved exceptional performance with AUC > 99.9%
+2. **High Recall**: The best model correctly identifies 99.72% of actual defaulters
+3. **Balanced Performance**: Both class weighting and SMOTE techniques performed well
+4. **Feature Importance**: Top predictive features include:
+   - `total_rec_prncp`: Total principal received
+   - `funded_amnt_inv`: Amount funded by investors
+   - `funded_amnt`: Total amount funded
+   - `last_pymnt_amnt`: Last payment amount
+   - `last_fico_range_high`: Latest FICO score
 
 ## Model Performance Results
 
@@ -41,17 +46,6 @@ This project implements a comprehensive machine learning pipeline for predicting
 | Random Forest (Weighted) | 1.0000 | 0.9888 | 0.9943 | 0.9999 |
 | Random Forest (SMOTE) | 0.9999 | 0.9886 | 0.9943 | 0.9999 |
 | Logistic Regression (Weighted) | 0.9979 | 0.9837 | 0.9907 | 0.9990 |
-
-### Key Findings
-1. **Excellent Performance**: All models achieved exceptional performance with AUC > 99.9%
-2. **High Recall**: The best model correctly identifies 99.72% of actual defaulters
-3. **Balanced Performance**: Both class weighting and SMOTE techniques performed well
-4. **Feature Importance**: Top predictive features include:
-   - `total_rec_prncp`: Total principal received
-   - `funded_amnt_inv`: Amount funded by investors
-   - `funded_amnt`: Total amount funded
-   - `last_pymnt_amnt`: Last payment amount
-   - `last_fico_range_high`: Latest FICO score
 
 ### Business Implications
 - **Risk Mitigation**: High recall ensures minimal missed defaults, protecting against credit losses
